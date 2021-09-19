@@ -8,7 +8,7 @@ import java.util.Scanner;
 //Leia 2 valores (A e B). Após, o programa deve mostrar uma mensagem "São Multiplos" ou "não são multipos", indicando
 // se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em ordem crescente ou
 // decrescente.
-public class Atividade_3 {
+public class atividade_3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int A,B;
