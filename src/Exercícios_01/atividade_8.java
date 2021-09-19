@@ -1,9 +1,9 @@
 package Exercícios_01;
-
+import java.util.Scanner;
 //Curso Java Completo (Udemy) | Prof. Dr. Nelio Alves
 //Exercíco sobre Estrututra condicional(if-else)
 
-//Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos, pois sabem
+//Em um país imaginário denominado Lisarb( BRASIL ao contrário), todos os habitantes ficam felizes em pagar seus impostos, pois sabem
 //que nele não existem políticos corruptos e os recursos arrecadados são utilizados em benefício da população, sem
 //qualquer desvio. A moeda deste país é o Rombus, cujo símbolo é o R$.
 //Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de Lisarb. Em seguida, calcule e
@@ -14,6 +14,26 @@ package Exercícios_01;
 //duas casas decimais.
 public class atividade_8 {
     public static void main(String[] args) {
-        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite o valor do seu salário: ");
+        double sal = input.nextDouble();
+        double imposto;
+
+        if (sal <= 2000.00){
+            imposto = (0.0);
+        }else if (sal <= 3000.0){
+            imposto = (sal - 2000) * 0.08;
+        }else if (sal <= 4500.0){
+            imposto = (sal - 3000) * 0.18 + 1000 * 0.08;
+        }else {
+            imposto = (sal - 4500.0)*0.28 + 1500*0.18 + 1000 * 0.08;
+        }
+
+        if (imposto == 0.0){
+            System.out.println("Isento");
+        }else {
+            System.out.printf("R$ %.2f%n" , imposto);
+        }
+        input.close();
     }
 }
