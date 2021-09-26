@@ -1,4 +1,4 @@
-package Exercícios_01;
+package Estrutura_Condicional;
 import java.util.Scanner;
 //Curso Java Completo (Udemy) | Prof. Dr. Nelio Alves
 //Exercíco sobre Estrututra condicional(if-else)

@@ -1,4 +1,4 @@
-package Exercícios_02;
+package Estrutura_Sequencial;
 import java.util.Scanner;
 //Curso Java Completo (Udemy) | Prof. Dr. Nelio Alves
 //Exercícios sobre estrutura Sequencial (entrada, processamento, saída)
